@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Stencil+Display:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <title>Incluyendo Multimedia y CSS</title>
+    <!-- Insertar Estilos CSS Externos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Insertar Estilos CSS INTERNOS -->
+    <style>
+        /* Acá iria todo mi codigo de estilos */
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>INCLUYENDO MULTIMEDIA y CSS</h1>
+        <img src="img/kbportada.jpg" width="100%" alt="kill bill">
+    </header>
+    <div>
+    
+    </div>
+    
+    <main>
+        <section id="uno">
+            <article>
+                <h2>titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, et. Obcaecati nesciunt inventore quidem exercitationem ea <a href="#">ipsa dolores</a>, nostrum, odio vero temporibus officia illum repellat debitis tempore aliquid? Sint, consequatur
+                </p>
+            </article>
+        </section>
+
+
+
+        <section id="dos">
+            <h2>Imagenes</h2>
+            <h3>Local</h3>
+            <img  src="img/elle.jpg" width="50%" class="bordesRedondeados" alt="portada kill bill">
+            <h3>Online</h3>
+            <img  src="https://thumb.thewallpapers.org/8/800_Kill_Bill_2-004.jpg" alt="paimei y beatrix">
+            <hr>
+            <h2>Video</h2>
+            <video src="video/KillBill2_trailerazo.mp4" width="600" autoplay controls muted loop >
+            Este navegador no es compatible con mp4</video>
+            <h3>multiformato</h3>
+            <video controls loop width="300">
+                <source src="video/foo.mp4" type="video/mp4"><!-- 1er formato-->
+                <source src="video/foo.ogg" type="video/ogg"><!-- 2do formato-->
+            </video>
+            <hr>
+            <h2>Audio</h2>
+            <audio src="audio/perfect.mp3" muted controls loop ></audio>
+            <hr>
+            <h2>IFrame</h2>
+            <h3>Sitio online</h3>
+            <iframe src="https://www.netflix.com/es/title/60031236" width="100%" height="500"></iframe>
+            <h3>Youtube</h3>
+            <iframe width="70%" height="315" src="https://www.youtube.com/embed/w75pIkF6EQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h3>Spotify</h3>
+            <iframe src="https://open.spotify.com/embed/playlist/6VUYYbBUbRDyWMszBZZ8yP" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </section>
+    </main>
+    <footer id="footer">
+        KillBill 2021 - desarrollado por <a href="#">Q.Tarantino</a>
+    </footer>
+    
+</body>
+</html>
