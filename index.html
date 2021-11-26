@@ -4,70 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Stencil+Display:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
-    <title>Incluyendo Multimedia y CSS</title>
-    <!-- Insertar Estilos CSS Externos -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <title> Vika Feria (Mi primer sitio)</title>
+    <!-- Acá vinculé el archivo de estilos al html de forma interna -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Insertar Estilos CSS INTERNOS -->
-    <style>
-        /* Acá iria todo mi codigo de estilos */
+    <link rel="stylesheet" href="../Curso Desarrollo Web/vika feria - silvana gutierrez/estilos.css">
+    <link rel="stylesheet" href="../Nueva carpeta/css/destino.css">
 
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <body>
-    <header>
-        <h1>otro titulo</h1>
-        <img src="img/kbportada.jpg" width="100%" alt="kill bill">
-    </header>
-    <div>
-    
-    </div>
-    
+    <!--en el body va todo el contenido dejo el comentario para tenerlo de ejemplo-->
+    <header class="container-fluid">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../Nueva carpeta/index.html">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../Nueva carpeta/Secciones/comprar.html" role="button" aria-expanded="false">Comprar</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ropa</a></li>
+            <li><a class="dropdown-item" href="#">zapatos</a></li>
+            <li><a class="dropdown-item" href="#">bags</a></li>
+            <li><a class="dropdown-item" href="#">accesorios</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Nueva carpeta/Secciones/vender.html">Vender</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Nueva carpeta/Secciones/acerca-de-vika.html">Acerca de Vika</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Nueva carpeta/Secciones/contacto.html">Contacto</a>
+        </li>
+      </ul>
+       
+        <br>
+        <!--va el encabezado-->
+        <h1 class="mayusculas animate__animated animate__slideInLeft"> Vika Feria Moda sostenible y de segunda mano</h1>
+        
+        
+        </header>
+        
+        <hr>
     <main>
-        <section id="uno">
-            <article>
-                <h2>titulo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, et. Obcaecati nesciunt inventore quidem exercitationem ea <a href="#">ipsa dolores</a>, nostrum, odio vero temporibus officia illum repellat debitis tempore aliquid? Sint, consequatur
-                </p>
-            </article>
-        </section>
+        <!-- Acá va el contenido principal h2, h3 etc-->
+		    <h2 class="padding">Catálogo</h2>
+			    <h3 class="padding">Elegí a lo que le vas a dar una segunda oportunidad</h3>
+           
 
+                    <section class="grid padding">
+                        <div> <img class="bordesRedondeados trans" src="multimedia/imagenes/ropa.png" alt="ropa">
+                      <h4>Ropa</h4></div>
+                      
+                         <div> <img class="bordesRedondeados trans" src="multimedia/imagenes/zapatos.png" alt="zapatos">
+                                <h4>Zapatos</h4> </div>
+                      <div>  <img class="bordesRedondeados trans" src="multimedia/imagenes/bags.png" alt="bags">
+                                <h4>Bags</h4></div>
+                      <div>  <img class="bordesRedondeados trans" src="multimedia/imagenes/accesorios.png" alt="accesorios">
+                                <h4>Accesorios</h4></div>
+                            </section>
+			    
+		    <h2 class=>¿Querés hacer circular lo que no usás?</h2>
+			    <h3 class="padding">Conocé cómo hacerlo</h3>
+               
+                <section>
 
-
-        <section id="dos">
-            <h2>Imagenes</h2>
-            <h3>Local</h3>
-            <img  src="img/elle.jpg" width="50%" class="bordesRedondeados" alt="portada kill bill">
-            <h3>Online</h3>
-            <img  src="https://thumb.thewallpapers.org/8/800_Kill_Bill_2-004.jpg" alt="paimei y beatrix">
-            <hr>
-            <h2>Video</h2>
-            <video src="video/KillBill2_trailerazo.mp4" width="600" autoplay controls muted loop >
-            Este navegador no es compatible con mp4</video>
-            <h3>multiformato</h3>
-            <video controls loop width="300">
-                <source src="video/foo.mp4" type="video/mp4"><!-- 1er formato-->
-                <source src="video/foo.ogg" type="video/ogg"><!-- 2do formato-->
-            </video>
-            <hr>
-            <h2>Audio</h2>
-            <audio src="audio/perfect.mp3" muted controls loop ></audio>
-            <hr>
-            <h2>IFrame</h2>
-            <h3>Sitio online</h3>
-            <iframe src="https://www.netflix.com/es/title/60031236" width="100%" height="500"></iframe>
-            <h3>Youtube</h3>
-            <iframe width="70%" height="315" src="https://www.youtube.com/embed/w75pIkF6EQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="container">
+                  <div class="row">
+                 
+               <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12"><h4>Paso 1</h4></div>
+                  <div class="col-lg-4 col-md-4 col-sm-12"><h4>Paso 2</h4> </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12"><h4>Paso 2</h4></div>
+               </div>
+               
+               </div>
+           
+            <video  src="multimedia/video/muestra.mp4"  autoplay controls muted loop class="videoTamaño"></video>
+       
             
-            <h3>Spotify</h3>
-            <iframe src="https://open.spotify.com/embed/playlist/6VUYYbBUbRDyWMszBZZ8yP" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </section>
-    </main>
-    <footer id="footer">
-        KillBill 2021 - desarrollado por <a href="#">Q.Tarantino</a>
-    </footer>
+          </section >
+
+
+ <section class= "padding center" >     
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+recibí todas las novedades</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">suscribite a nuestro newsletter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+        </div>
+        <div class="input-group">
+          <span class="input-group-text">Te leemos</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+        <button type="button" class="btn btn-primary">guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>    
+
+            <h2 class="caja">Por qué elegir la moda circular</h2>
+                <h3>Una nueva forma de consumir (o algo así)</h3>
+               <section id="beneficios">
+                <table class= " .cajaTexto padding">  <!-- esta tabla es solo para presentar en el desafío, no la voy a ausar en mi proyecto--> 
+                    <tr><!-- inicio de fila-->   
+                      <td class= "padding">
+                          <ul>
+                        <li class=><h4>Cuidás el planeta</h4> </li>
+                        <li>Ahorras agua </li>
+                        <li>Menos contaminación con pesticidas usados en las fibras naturales</li>
+                        <li>reducís metales pesados y compuestos tóxico que se utilizan en el teñido de las prendas</li>
+
+                      </td>                     
+                    </tr><!-- cierre de fila -->  
+                    <tr><!-- inicio de otra fila-->   
+                      <td><ol>
+                        <li><h4>Beneficios para vos</h4> </li>
+                        <li>Beneficio 1</li>
+                        <li>Beneficio 2</li>
+                        <li>Beneficio 3</li>
+                 
+                      </ol>
+                       </td>    
+                  </table>
+              
+            <h2>Novedades</h2>
+            <!-- Acá aplico clase para cambiar color de párrafo -->
+            <novedades class="novedadesFlex">
+                <div><p class="padding"> PRIMERO Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                  Sunt dicta architecto alias voluptates magni inventore 
+                   ducimus quaerat delectus quos nihil maiores nobis, 
+                   iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                   ducimus quaerat delectus quos nihil maiores nobis, 
+                  iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                   ducimus quaerat delectus quos nihil maiores nobis, 
+                  iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                  ducimus quaerat delectus quos nihil maiores nobis, 
+                  iste esse tempore minima, deleniti distinctio voluptatem non </p></div> 
+               <div><p class="padding"> SEGUNDO Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                   Sunt dicta architecto alias voluptates magni inventore 
+                  ducimus quaerat delectus quos nihil maiores nobis, 
+                  iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                 ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non </p></div> 
+                <div><p class="padding"> TERCERO Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non Sunt dicta architecto alias voluptates magni inventore 
+                ducimus quaerat delectus quos nihil maiores nobis, 
+                iste esse tempore minima, deleniti distinctio voluptatem non </p></div> 
+                <div class="hijo-flex-destacado"><p> CUARTO Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Sunt dicta architecto alias voluptates magni inventore 
+                    ducimus quaerat delectus quos nihil maiores nobis, 
+                    </p></div>
     
+                                 
+   
+                    
+                 
+            </novedades> 
+            
+
+    
+    </main>
+    <footer class="footer">
+        <h3 class="decoracion">Conocé nuestras vías de contacto</h3>
+            <h4>+54 911 6 3512 492</h4>
+            <h4>ventas@vikaferia.com</h4>
+            <h4>Tigre, Buenos Aires - Argentina</h4>
+        <h3>Seguínos en nuestras redes</h3>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
